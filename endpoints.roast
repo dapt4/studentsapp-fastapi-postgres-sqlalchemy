@@ -1,0 +1,22 @@
+# list of students
+GET http://localhost:8000/
+
+# get a student
+GET http://localhost:8000/student/2
+
+# new student
+POST http://localhost:8000/student << raw
+{
+  "name":"astrid"
+}
+raw
+
+# update student
+PUT http://localhost:8000/student/3 << raw
+{
+  "name":"hugo"
+}
+raw
+
+# delete a student
+DELETE http://localhost:8000/student/10 
